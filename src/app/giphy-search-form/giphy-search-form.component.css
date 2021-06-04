@@ -1,0 +1,144 @@
+#giphySearchForm {
+	height: 100vh;
+	padding: 2rem;
+	background: #F36800;
+	color: #fff;
+	font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.outer-container {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.inner-container {
+	margin: auto;
+	padding: 10px;
+}
+
+.giphy-title {
+	font-size: 4em;
+}
+
+.giphy-sub-title {
+	margin-top: 80px;
+}
+
+.giphy-description {
+	margin-top: 40px;
+}
+
+.form-inline {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.form-inline input {
+	font-size: 18px;
+	margin: 5px 0 5px 0;
+	padding: 15px;
+	background-color: #fff;
+	border: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+.form-inline button {
+	padding: 15px 15px;
+	margin: 5px 0 5px 0;
+	border: none;
+	font-size: 18px;
+}
+
+.dropdown-button {
+	background-color: #E3EEF5;
+	color: #AABECA;
+}
+
+.search-button {
+	background-color: #000000;
+	color: white;
+	cursor: pointer;
+}
+
+.rounded-pill-left {
+	border-top-left-radius: 5px !important;
+	border-bottom-left-radius: 5px !important;
+}
+
+.rounded-pill-right {
+	border-top-right-radius: 5px !important;
+	border-bottom-right-radius: 5px !important;
+}
+
+fa {
+	transform: scale(1.5, 1);
+}
+
+h1,
+h2 {
+	font-weight: 400;
+	margin: 10px 0;
+}
+
+.ripple {
+	position: relative;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+.ripple:after {
+	content: "";
+	background: #AABECA;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px!important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s
+}
+
+.ripple:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
+}
+
+::placeholder {
+	color: #C8D3D8;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #C8D3D8;
+}
+
+::-ms-input-placeholder {
+	color: #C8D3D8;
+}
+
+@media (max-width: 800px) {
+	.form-inline input {
+		margin: 10px 0;
+	}
+	.form-inline {
+		flex-direction: column;
+		align-items: stretch;
+	}
+}
+
+@media (min-width: 800px) {
+	.width {
+		width: 400px;
+	}
+}
