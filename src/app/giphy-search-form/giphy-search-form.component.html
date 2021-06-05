@@ -4,9 +4,9 @@
             <h1 class="giphy-title">Gif Search</h1>
             <div class="form-inline">
                 <input class="width rounded-pill-left" type="text" placeholder="What are you looking for?"
-                    name="searchTerm">
+                    name="searchTerm" [(ngModel)]="searchTerm">
                 <button class="dropdown-button">Show All &nbsp;&nbsp;<i class="fa fa-caret-down fa-lg"></i></button>
-                <button class="search-button ripple rounded-pill-right" type="submit"><i
+                <button class="search-button ripple rounded-pill-right" type="submit" (click)="searchGiphy()"><i
                         class="fa fa-search fa-lg"></i></button>
             </div>
         </div>

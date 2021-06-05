@@ -8,9 +8,17 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 export class GiphySearchFormComponent implements OnInit {
 
+  @Output() emitSearch = new EventEmitter<any>()
+  searchTerm: string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  searchGiphy() {
+    if (this.searchTerm != null)
+      this.emitSearch.emit(this.searchTerm);
   }
 
 }

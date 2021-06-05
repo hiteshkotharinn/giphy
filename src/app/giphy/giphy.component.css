@@ -1,0 +1,28 @@
+.grid {
+	padding: 5rem 4rem 5rem 4rem;
+	height: 100%;
+	column-count: 3;
+	column-gap: 16px;
+}
+
+.grid .gItem {
+	display: inline-block;
+	margin-bottom: 16px;
+	width: 100%;
+}
+
+.grid .gItem img {
+	width: 100%;
+}
+
+@media (max-width: 991px) {
+	.grid {
+		column-count: 2;
+	}
+}
+
+@media (max-width: 767px) {
+	.grid {
+		column-count: 1;
+	}
+}
